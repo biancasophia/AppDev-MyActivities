@@ -1,0 +1,33 @@
+<ion-content [fullscreen]="true">
+  <div>
+      <ion-button>Select This</ion-button>
+      <br>COLOR BUTTON<br>
+      <ion-button color="primary">Primary Button</ion-button><br>
+      <ion-button color="secondary">Secondary Button</ion-button><br>
+      <ion-button color="danger">Danger Button</ion-button><br>
+  </div>
+
+  <ion-card>
+      <ion-card-header>
+          Card Header
+      </ion-card-header>
+  </ion-card>
+  <ion-card>
+      <ion-card-content>
+          Card Content
+      </ion-card-content>
+  </ion-card>
+
+  <br>MODAL<br>
+  <ion-button color="primary" (click)="toggleModal()">Modal</ion-button>
+
+  <br>ALERT<br>
+  <ion-button color="primary" (click)="alert()">Alert</ion-button>
+
+  <br>TOAST<br>
+  <ion-button color="primary" (click)="presentToast()">Present Toast</ion-button><br>
+
+  <ion-toggle [(ngModel)]="condition"></ion-toggle>
+
+</ion-content>
+

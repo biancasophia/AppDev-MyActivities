@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>databinding</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">databinding</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+    <label>Username</label>
+    <input type="text" [(ngModel)]="userName" placeholder="username">
+    <label>Password</label>
+    <input type="text" [(ngModel)]="password" placeholder="password">
+    <ion-button (click)="logIn()">Login</ion-button>
+  </div>
+</ion-content>
