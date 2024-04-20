@@ -1,0 +1,7 @@
+{
+  "name": "pwa-Activity8",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
