@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+/* Content*/
+.Content{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+.AboutMe{
+    max-width: 600px;
+}
+.AboutMe h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: 	#8a595c;
+    text-align: center;
+}
+.AboutMe h2{
+    font-size: 35px;
+    font-weight: 700;
+    color: #c5304e	;
+    text-align: center;
+}
+.AboutMe h3{
+    font-size: 20px;
+    font-weight: 700;
+    color:#ec869b	;
+    text-align: center;
+}
+.AboutMe h4{
+    color: transparent;
+    font-size: larger;
+}
+.AboutMe p{
+    font-size: 16px;
+    justify-content: center;
+    text-align: justify;
+}
+.AboutMe h5{
+    font-size: 30px;
+    font-weight: 700;
+    color: #c74861;
+    text-align:left;
+}
+.AboutMe p b{
+    color:#b80b30;
+}
