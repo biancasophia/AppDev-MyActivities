@@ -1,0 +1,19 @@
+  .input {
+    padding: 20px;
+  }
+  
+  ion-item {
+    margin-bottom: 20px;
+    --background: #e7e7e7; 
+    border-radius: 10px; 
+  }
+  
+  ion-item::part(item-native) input {
+    background-color: transparent; 
+  }
+  
+  .create-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }

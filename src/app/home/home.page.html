@@ -1,19 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      
-    </ion-title>
+    <ion-title><B>POEM</B></ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Home</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+<div class="container">
 
-  <div id="container">
-    <strong><b>Bianca Sophia R. Mangundayao</b></strong>
-     </div>
+ <div class="content" *ngFor="let user of UserList">
+    
+  <div class="content-box">
+    
+    <h2> <b>Title</b> :  {{user.title}}</h2>
+    <h2> <b>Author</b> :  {{user.author}}</h2>
+    <h2> <b>Publication Date</b> :  {{user.publicationdate}}</h2>
+    <h2> <b>Genre</b> :  {{user.genre}}</h2>
+    <h2> <b>Number of Stanzas</b> :  {{user.stanzas}}</h2>
+  
+
+  </div>
+  <div class="btn">
+    <ion-button (click)="update(user)">update</ion-button>
+    <ion-button (click)="delete(user)">delete</ion-button>
+
+  </div>
+ </div>
+ <ion-button (click)="create()">create</ion-button>
+</div>
 </ion-content>

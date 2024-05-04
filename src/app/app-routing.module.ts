@@ -8,20 +8,24 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'signup',
     pathMatch: 'full'
-  },
-  {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
     path: 'signup',
     loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
   },
   {
-    path: 'dashboard',
-    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'create',
+    loadChildren: () => import('./create/create.module').then( m => m.CreatePageModule)
+  },
+  {
+    path: 'update/:id',
+    loadChildren: () => import('./update/update.module').then( m => m.UpdatePageModule)
   },
 ];
 

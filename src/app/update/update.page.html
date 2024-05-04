@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title><b>UPDATE</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <div class="input"   > 
+
+  <ion-item>
+    <ion-label position="floating"> Title: </ion-label>
+    <ion-input type="text" [(ngModel)]="users.title"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating"> Author: </ion-label>
+    <ion-input type="text" [(ngModel)]="users.author"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label > Publication Date: </ion-label>
+    <input type="date" [(ngModel)]="users.publicationdate">
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating"> Genre: </ion-label>
+    <ion-input type="text" [(ngModel)]="users.genre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating"> Number of Stanzas: </ion-label>
+    <ion-input type="number" [(ngModel)]="users.stanzas"></ion-input>
+  </ion-item>
+</div>
+
+ <div class="update-btn">  
+
+  <ion-button (click)="update()">Update</ion-button>
+ </div>
+</ion-content>
