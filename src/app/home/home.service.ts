@@ -37,9 +37,11 @@ export class HomeService {
     try{
       const docRefM1 = await addDoc(collection(firestore, "users"), {
         
-
       title : user.title,
-      date: user.author,
+      author: user.author,
+      publicationdate: user.publicationdate,
+      genre: user.genre,
+      stanzas: user.stanzas
 
       });
       console.log("Doc written with ID:", docRefM1);

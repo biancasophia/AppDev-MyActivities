@@ -24,6 +24,7 @@ export class HomePage {
     this.home.newList = this.UserList;
     this.home.edit(user);
   }
+  
   async delete(user: User){
    const confirmation = confirm('Are you sure you want to delete this series?');
    if(!confirmation){
@@ -42,6 +43,7 @@ export class HomePage {
   }
   async user(){
     this.UserList = await this.home.getUsers();
+    this.home.newList = this.UserList;
 
   }
 }
