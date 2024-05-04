@@ -60,7 +60,7 @@ export class AuthService {
         const user = userCredential.user;
         this.setAuthentication(true);
         this.presentAlert('Success', 'Log in successful');
-        this.router.navigate(['home']);
+        this.router.navigate(['dashboard']);
 
       })
       .catch((error) => {
